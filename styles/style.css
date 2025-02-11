@@ -1,8 +1,159 @@
 /*
 Colors:
 
-Text: 1A1A1A
+Text: #1A1A1A
 Green: #00B172
 White: #FFF
 
 */
+html{
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* canviar font aini */
+
+/* FIRST PART:*/
+.image-container{
+    display: flex;
+    .back {
+        position: relative;
+        width: 100vw;
+    }
+    justify-content: center;
+    align-items: center;
+    
+    #navbar {
+        position: fixed;
+        top:0px;
+        background-color: #FFF;
+        display: flex;
+        justify-content: space-around;
+        width: 100vw;
+        img {
+            width: 110px;
+            padding: 10px 10px;
+        }
+        ul {
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+            a {
+                color: #1A1A1A;
+                text-decoration: none;
+                align-self: flex-end;
+            }
+        }
+    }
+    
+    .text {
+        position: absolute;
+        align-self: auto;
+        color: #FFF;
+        text-align: center;
+        h1{
+            font-size: 2rem;
+        }
+        align-content: center;
+    
+    }
+}
+
+/* segona part*/
+.second-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    .first-section {
+        h2 {
+            text-align: center;
+            display: inline-flex;
+            flex-direction: column;
+        }
+        h2::after {
+            content: '';
+            display: block;
+            width: 98%; 
+            height: 2px;
+            background-color: #00B172;
+            margin: 10px 0px 20px;
+        }
+    }
+}
+.second-part .second-section {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    div {
+        width: 33%;
+        margin: 5px;
+        text-align: center;
+        img {
+            width: 50px;
+        }
+        h3 {
+            color: #00B172;
+        }
+        
+    }
+    
+}
+
+/* tercera part*/
+.third-part{
+    position: relative;
+    padding: 40px 40px;
+    background-color: #00B172;
+    margin: 15px;
+    h2{
+        display: inline-flex;
+        flex-direction: column;
+        text-align: start;
+        color: #FFF;
+        margin: 0 0 0 0;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 100%; 
+            height: 2px;
+            background-color: #FFF;
+            margin: 10px 0px 20px;
+        }
+}
+
+.third-part .the-rest{
+    display: flex;
+    justify-content: space-around;
+    gap: 30%;
+    align-items: center;
+    flex-grow: 1;
+    h3 {
+       color: #FFF;
+    }
+    div{
+        flex: 1;
+    }
+}
+
+#icono{
+    position: absolute;
+    width: 50px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
