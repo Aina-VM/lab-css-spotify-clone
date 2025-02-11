@@ -135,15 +135,19 @@ body{
 
 .third-part .the-rest{
     display: flex;
-    justify-content: space-around;
-    gap: 30%;
+    justify-content: space-between;
     align-items: center;
-    flex-grow: 1;
+    max-width: 100%;
     h3 {
        color: #FFF;
     }
     div{
         flex: 1;
+        max-width: 40%;
+        img {
+            width: 100%;
+            height: auto;
+        }
     }
 }
 
